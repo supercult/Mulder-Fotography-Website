@@ -1,0 +1,408 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #2c3e50;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.main {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #ecf0f1;
+  position: relative;
+  top: 10vh;
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  background-color: #7f8c8d;
+  position: relative;
+  top: 10vh;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+
+/* Full Screen Menu */
+
+.menu-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.98);
+  overflow-x: hidden;
+  transition: 0.8s;
+  text-align: center;
+}
+
+.menu-overlay-content {
+  position: relative;
+  top: 5vh;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-overlay-content h1 {
+  padding: 8px;
+  font-size: 8vh;
+  color: #ecf0f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-overlay-content h2 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vh;
+  color: #34495e;
+  display: block;
+  transition: 0.3s;
+}
+
+.menuline {
+  width: 40vw;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vh;
+  color: #ecf0f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-overlay a:hover,
+.menu-overlay a:focus {
+  color: #7f8c8d;
+}
+
+.menu-active {
+  pointer-events: none;
+  cursor: default;
+  padding: 8px;
+  margin: 0;
+}
+
+
+/* Header */
+
+
+/* Header Icon */
+
+.icon-wrapper {
+  display: inline-block;
+  height: 10vh;
+  width: 10vh;
+  font-size: 5vh;
+  float: left;
+}
+
+.menu-icon {
+  margin: 2.5vh;
+  color: #fff;
+}
+
+
+/* Header Title */
+
+.menu-title {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  height: 10vh;
+}
+
+.menu-title h1 {
+  margin: 0;
+  font-size: 5vh;
+  line-height: 10vh;
+  color: #fff;
+}
+
+
+/* Menu Bars */
+
+.bars-wrapper {
+  display: inline-block;
+  height: 10vh;
+  width: 10vh;
+  float: right;
+  font-size: 5vh;
+}
+
+.menu-bars {
+  margin: 2.5vh;
+  color: #fff;
+}
+
+.menu-bars:hover {
+  cursor: pointer;
+}
+
+
+/* Footer */
+
+footer hr {
+  border-color: #000;
+  width: 18vw;
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+.footericon {
+  margin: 0 1vw 2vh 1vw;
+  color: #000;
+}
+
+footer h3 {
+  color: #000;
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+footer p {
+  color: #000;
+  margin-left: 1vw;
+  float: left;
+}
+
+
+/* Footer Contact */
+
+.footer-contact-wrapper {
+  height: 26vh;
+  width: 20vw;
+  margin-left: 16vw;
+  float: left;
+}
+
+
+/* Footer Social Media */
+
+.footer-social-wrapper {
+  height: 26vh;
+  width: 20vw;
+  float: left;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: 9vh;
+}
+
+
+/* Footer Navigation */
+
+.footer-nav-wrapper {
+  height: 26vh;
+  width: 20vw;
+  float: left;
+}
+
+
+/* Automatic Slideshow */
+
+.slide-wrapper {
+  height: 90vh;
+  width: 100%;
+  background-image: url("../media/home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.home-content-wrapper {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.home-content-wrapper h1 {
+  font-size: 6vh;
+}
+
+
+/* Pages */
+
+.content-wrapper {
+  min-height: 72.5vh;
+  width: 100%;
+  background-color: #ecf0f1;
+  padding: 2vh 2vw 2vh 6vw;
+}
+
+.content-wrapper h1 {
+  color: #000;
+  margin: 2vh 0 2vh 0;
+}
+
+.content-wrapper hr {
+  border-color: #000;
+  margin: 2vh 0 4vh 0;
+  height: 0.33vh;
+  background-color: #000;
+}
+
+
+/* News Page */
+
+.news-box {
+  min-height: 25vh;
+  box-shadow: 1vh 1vh 3vh #c2c2c2;
+  margin: 2vh 0 2vh 0;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.news-box h1 {
+  margin-top: 0;
+}
+
+.news-box p {
+  font-size: 3vh;
+}
+
+.news-box hr {
+  border-color: #000;
+  margin: 2vh 0 2vh 0;
+  height: 0;
+}
+
+
+/* Gear Images */
+
+.camera-image {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  border-color: red;
+  background-image: url("../media/camera.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.gallery-box {
+  min-height: 42.5vh;
+  box-shadow: 1vh 1vh 3vh #c2c2c2;
+  margin: 2vh 0 2vh 0;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.gallery-box-double {
+  min-height: 90vh;
+  box-shadow: 1vh 1vh 3vh #c2c2c2;
+  margin: 2vh 0 2vh 0;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.image-box {
+  min-width: 10vw;
+  min-height: 10vh;
+  box-shadow: 1vh 1vh 1vh #c2c2c2;
+  float: left;
+  margin: 0 2vw 2vh 0;
+}
+
+.image-box img {
+  height: auto;
+  width: auto;
+  max-width: 27.5vw;
+}
+
+
+/* Gear Page */
+
+.gear-box {
+  width: 17.15vw;
+  height: 50vh;
+  box-shadow: 1vh 1vh 3vh #c2c2c2;
+  float: left;
+  margin: 2vh 0 2vh 1vw;
+  text-align: center;
+}
+
+.gear-box hr {
+  border-color: #000;
+  margin: 2vh 1vw 2vh 1vw;
+  height: 0;
+}
+
+.camera {
+  width: 17.15vw;
+  height: 17.15vw;
+  background-image: url("../media/gear/camera.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.lens {
+  width: 17.15vw;
+  height: 17.15vw;
+  background-image: url("../media/gear/lens.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.lens2 {
+  width: 17.15vw;
+  height: 17.15vw;
+  background-image: url("../media/gear/lens2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 95%;
+}
+
+.flitser {
+  width: 17.15vw;
+  height: 17.15vw;
+  background-image: url("../media/gear/flitser.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.filter {
+  width: 17.15vw;
+  height: 17.15vw;
+  background-image: url("../media/gear/filter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+/* Over Mij */
+
+.about-image {
+  height: 75vh;
+  width: 25vw;
+  background-image: url("../media/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
+}
+
+.text-box {
+  min-height: 80vh;
+  box-shadow: 1vh 1vh 3vh #c2c2c2;
+  margin: 2vh 0 2vh 0;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.text-box p {
+  font-size: 3vh;
+}
